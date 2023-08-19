@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    display: inline-flex;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sign{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+        color: rgb(231, 222, 222);
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: right;
+    }
+    h1{
+        margin-top: 80px;
+        text-align: right;
+        margin-right: 0px;
+    }
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    b{
+        margin-left: 40px;
+    }
+    #ari{
+        height: 115px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+    .line{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: rgb(210, 53, 53);" class="nav-link active dropdown-toggle dropbtn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="#">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="cancer.html">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="horoscope.html">LEO</a>
+                    <a class="dropdown-item" href="taurus.html">VIRGO</a>
+                    <a class="dropdown-item" href="gemini.html">LIBRA</a>
+                    <a class="dropdown-item" href="#">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="horoscope.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="taurus.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="gemini.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="#">PISCES</a>
+                </span>
+                  </div>
+            </li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="AboutUs.html">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+<br><br>
+    <div id="taurus" class="sign">
+        <div class="line">
+            <img src="assets/images/taurus.png" alt="aries" id="ari">
+        <h1>वृष राशि (TAURAS)</h1>
+        </div>
+        <h4>सामान्य विशेषताएं, स्वभाव व परिचय</h4><hr style="border: 1px solid black;"><br>
+        <p>
+<b>वृष राशि</b> का स्वामी शुक्र है । वृष राशि वाला व्यक्ति अपने हठ पर दृढ़ रहता
+है। आराम पसन्द रहना यह अपना धर्म समझता है । यह व्यक्ति तेजस्वी, संघर्षशील,
+स्वाभिमानी, श्रेष्ठ मित्रों से युक्त, तेजस्वी, माता-पिता तथा गुरु का भक्त, आयुष्मान
+होता है, छोटे-छोटे कामों पर भी लम्बे-लम्बे विचार करता रहता है । शत्रु अधिक
+होते हैं। वृष राशि वाले व्यक्ति को आकस्मिक धन लाभ के अवसर भी मिलते हैं,
+ये लोग सुखमय तथा अधिकार पूर्ण जीवन व्यतीत करते हैं । जीवन का पूर्वार्द्ध
+संघर्षपूर्ण किन्तु उत्तरार्द्ध सुखमय एवं उन्नतिशील होता है । इस राशि को जातक/
+जातिका प्राय: बैंकिंग, तैल एवं इत्रादि व्यवसाय, भवन निर्माण, विज्ञापन अथवा
+कलादि से सम्बन्ध रखने वाला होता है | कन्या - वृश्चिक राशि वालों से सांझेदारी
+अथवा मित्रता शुभसूचक होती है। भाग्योदय वर्ष 25, 28, 36 एवं 42 होते हैं। इस
+राशि वाले व्यक्ति उत्तेजक पदार्थों का सेवन कम करते हैं। इन्हें नियमित व्यायाम
+सम्बन्धी अभ्यास करना स्वास्थ्य के लिए लाभदायक रहता है। इन्हें पुत्र, स्त्री,
+वाहन, भूमि एवं गृहादि का सुख पूर्ण रूप से मिलता है । इनके लिए 5, 13, 26,
+27, 45वां वर्ष कुछ कष्टदायी होते हैं । वृष राशि के जातक एक सफल माता-पिता
+बनते हैं। विवाह उपरान्त विशेष भाग्योदय होता है ।</p>
+<p><b>वृष राशि</b> के जातक अत्यन्त सामाजिक होते हैं। भाई-बन्धुओं तथा प्रियजनों
+का सत्कार करने में उन्हें विशेष आनन्द की अनुभूति होती है । वृष राशि के जातकों
+का प्रेमी स्वभाव उनमें अधिकार की भावना भी पैदा करता है। अपने प्यार के लिए
+बड़े से बड़े बलिदान कर सकते हैं, किन्तु जिनसे घृणा करने लगते हैं उन्हें जीवन
+भर क्षमा नहीं कर पाते ।</p>
+<p>वृष राशि के जातक दृढ़ स्वभाव के और काम के प्रति लगन वाले होते हैं ।
+उनमें भारी शारीरिक और मानसिक सहन शक्ति होती है ।</p><p>
+<b>उपाय-</b>शुक्रवार का व्रत एवं शिव उपासना शुभ फलदायिनी है।<br>
+<b>शुभ नग–</b>एक रत्ति या इससे अधिक वजन का हीरा या श्वेत मोती को अंगूठी<br>
+जड़वाकर बीज मन्त्र — <strong>'ॐ द्रां द्रीं द्रौं सः शुक्राय नम:'</strong> का 16 हज़ार की संख्या
+में जप करके मध्यमा अंगुली में शुभ मुहूर्त्त में धारण करना चाहिए।<br>
+<b>शुभ रंग -</b> गुलाबी, हरा और सफेद रंग के कपड़े पहनना शुभ रहेगा लाल रंग
+अशुभ। शुक्र, शनि एवं बुधवार शुभ एवं लाभदायक होंगे।
+        </p>
+    </div>
+    
+</body>
+</html>

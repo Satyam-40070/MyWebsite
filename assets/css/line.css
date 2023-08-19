@@ -1,0 +1,8 @@
+@import "style.css";
+
+hr{
+    height: 25px;
+    width: 50%;
+    background: green;
+
+}

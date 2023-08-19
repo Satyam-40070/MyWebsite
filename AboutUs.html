@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+        margin-left: 250px;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .nav-item:hover{
+        text-decoration: underline;
+        color: #e9ecef;
+    }
+  .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+  nav{
+        /*background-color: rgb(204, 166, 95);*/
+        background-image: linear-gradient(45deg,black,orange);
+        color: #e9ecef;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 768px){
+      #search{
+        display: none;
+      }
+      p{
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    img{
+        height: 10px;
+        width: 10px;
+        margin-top: 10px;
+        margin-left: -500px;
+        }
+        button{
+          margin-top: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav" >
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: #e9ecef;" class="nav-link active dropdown-toggle dropbtn" onclick="myFunction()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="cancer.html">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+            </li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(210, 53, 53);" class="nav-link active" href="">About Us</a></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" id="search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+    </form>
+    <ul class="navbar-nav ms-auto" id="collapsibleNavbar">
+        
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+    <a href="AboutEng.html"><button class="btn btn-primary ml-auto" id="language">View in English</button></a>
+    <h2 style="margin-left: 30px; margin-top: 50px;"> परिचय (Introduction)</h2>
+    <p>
+पंचाँग पद्धति प्राचीन भारतीय काल गणना एवं ज्योतिष का ही एक व्यवस्थित एवं विकसित स्वरूप है।
+वस्तुत: वर्तमान पंचाँग भारतीय ज्योतिष के विभिन्न अँगों ( तिथि, वार, नक्षत्र, योग, ग्रह - संचार, सूर्यादि ग्रहण
+विवरण आदि) को एक ही स्थान में समाहित (संयोजित) करने का कार्य करता है । ईसवी पूर्व वैदिक एवं
+पौराणिक काल में ही विवाह, पूजा-पाठ एवं यज्ञ-अनुष्ठानादि- प्रत्येक शुभ कार्य के आरम्भ करने से पूर्व
+शुभ संकल्प करने का विधान है। शुभ कार्यों के संकल्प में संवत् नाम, अयन, ऋतु मास, पक्ष-तिथि, वार,
+राशि, नक्षत्र आदि का उच्चारण आवश्यक माना जाता है। पंचाँग में इन सब तत्त्वों का विवरण अवश्य मिलता
+है। भारतीय ज्योतिष-गणना में काल गणना की सूक्ष्म प्रणाली का विशेष वर्णन मिलता है। जिसमें शून्य से
+लेकर करोड़ों, अरबों एवं खरबों तक की संख्याओं का वर्णन मिलता है। काल व्यवस्था को दर्शाने के लिए
+भारतीय पंचाँगों की महत्त्वपूर्ण भूमिका रही है। पंचाँग में वर्णित उत्तरायण, दक्षिणायन, गोलार्द्ध, वसन्तग्रीष्मादि षड्ऋतुएँ, सम्वत् मास, चान्द्रकृष्ण पक्ष, पूर्णिमा, अमावस, एकादशी आदि तिथियों, वार, नक्षत्र,
+योग, ग्रह संचार, सूर्य चन्द्रादि ग्रहण, शुभ विवाहादि मुहूर्त्त, पर्व-त्यौहार आदि के वर्णन प्राचीन
+गौरवमयी वैदिक संस्कृति, सभ्यता के महत्त्वपूर्ण पक्षों की अभिव्यक्ति करते हैं।
+पंचाँग मात्र तिथि, वारादि दर्शाने वाला कैलेण्डर नहीं है, अपितु इसमें प्राचीन भारतीय सभ्यता एवं
+संस्कृति का स्वरूप हमारे सभी पर्व-त्यौहारों आदि में स्पष्ट रूप से प्रतिबिम्बित होता है। प्राय: सभी भारतीय
+पर्व-त्यौहार, तिथि, वार, नक्षत्रादि पर आधारित होते हैं जिनका वैज्ञानिक एवं गणितीय वर्णन एक स्तरीय
+पंचाँग में अवश्य रहता है।</p>
+<h2>इतिहास (History)</h2>
+<p>
+सन् 1875 ई० में जब हमारे प्रपितामह पूजनीय पण्डित देवी दयालु जी ने लाहौर (पाकिस्तान) में पंचाँग
+दिवाकर (पत्रिका) का शुभारम्भ किया, उस समय भारत में अंग्रेजी साम्राज्य का कुशासन चल रहा था।
+17वीं शताब्दी एवं उससे पूर्व के अनेक वर्षों से भारत के लोग हूणों, यहूदियों, यवनों, मुगलों आदि विदेशी
+लुटेरों के जुल्मों-सितम से संत्रस्त, नैराश्य एवं संघर्ष की स्थिति में थे।
+18वीं शताब्दी में अधिकांश लोग ब्रिटिश साम्राज्य के शोषण के कारण परेशान एवं दु:खी थे। सामाजिक
+एवं राजनीतिक वातावरण अशान्त एवं संघर्षपूर्ण था । पराधीनता के कारण अधिकांश लोग आस्तिकता की
+भावनाओं से विमुख हो रहे थे । यद्यपि भारत के अनेक भागों से स्वतन्त्रता एवं क्रान्ति के स्वर उभरने लगे थे।
+ऐसे विक्षुब्ध वातावरण में धर्म एवं ईश्वर का आश्रय आवश्यक था। धर्म एवं धार्मिक कृत्यों में पुन: आस्था का
+संचार करने के लिए उस काल में श्रीगुरु नानकदेव जी, संत रविदास जी, स्वामी विवेकानन्द, जैसे महान्
+सन्त एवं उद्धारक सन्त पैदा हो चुके थे। ऐसी कठिन परिस्थितियों में लोग कल्याण की भावना से प्रेरित होकर
+पण्डित देवी दयालु जी ने पंचाँग दिवाकर नामक तिथि पत्रिका को क्रमवद्ध श्रृंखला प्रतिवर्ष छापने
+का शुभ संकल्प किया ।</p>
+<h2>"प्राचीन परम्पराओं का प्रतीक-पंचाँग दिवाकर"</h2><img src="assets/images/panch.png" id="panch"><br>
+<h4>(ऐतिहासिक परिप्रेक्ष्य )</h4>
+<p>
+सामान्य लोगों में भारतीय परम्पराओं एवं संस्कारों के प्रतीक पर्व-त्यौहारों के प्रति सजग एवं उत्साह का
+संचार करने के लिए पंचाँग जैसी धर्म परायण पत्रिकाओं की अत्यन्त आवश्यकता थी । लगभग सभी दिव्य देवी, देवताओं, महाविद्या, श्री राम, कृष्ण, बुद्ध आदि अवतारों के जन्मोत्सवों तथा श्री गुरु नानकदेव, गुरु शंकराचार्य,
+गुरु अर्जुन देव आदि गुरुओं के अवतार दिवस व प्रादेशिक मेलों आदि का विवरण पंचाँग में रहता है।
+पंचाँग दिवाकर में संक्रान्ति, पूर्णिमा, अष्टमी, एकादशी, त्रयोदशी, अमावस आदि तिथियां, संवतसर-फल,
+पक्ष, विभिन्न ऋतुओं का वर्णन, जन्मदिन, मुण्डन, गृह निर्माण, गृह प्रवेश, व्यवसाय, विवाह, मृतकादि संस्कार
+आदि शुभ मुहूर्त्ती का विवरण मिलता है। <br>इसके अतिरिक्त ग्रहों के आधार पर जातक की धार्मिक, व्यक्तिगत, आर्थिक, व्यवसायिक, गृहस्थ सम्बन्धी
+समस्याओं एवं समाधान व राजनैतिक गतिविधियाँ इत्यादि दिवाकर पंचाँग में वर्णित रहती है । इस प्रकार लोगों
+को अपनी प्राचीन परम्पराओं, पर्व-त्यौहारों एवं संस्कृति से जोड़ने का कार्य पंचाँग करता है।
+भारतीय हिन्दु समाज के सभी संस्कार जैसे - विवाह, पुंसवन, मुण्डन, विवाह, अन्त्येष्ठी आदि संस्कारों व
+व्रतानुष्ठान आदि कृत्यों में संकल्प का विशेष महत्त्व है। संकल्प में संवत्, मास, पक्ष, तिथि, वार, माता-पिता के
+नाम गोत्र आदि का विवरण अवश्य होता है। जिसके लिए वर्तमान प्रामाणिक पंचाँग की आवश्यकता होती है।
+धर्म-परायण लोगों के लिए पंचाँगदिवाकर का आगमन प्रकाश-स्तम्भ साबित हुआ है।
+‘पंचाँग दिवाकर' के प्रवर्त्तक हमारे पितामह पूजनीय पण्डित देवी दयालु ज्योतिषी जी का जन्म अविभाजित भारत
+(पंजाब) के मुख्य नगर लाहौर में 21 अप्रैल सन् 1839 ईसवी को धर्म-परायण, शाण्डिल्य गोत्रीय ब्राह्मण परिवार
+में हुआ। उन्होंने ज्योतिष की प्रारम्भिक शिक्षा अपने पिता श्री रामजी दत्त तथा अपने दादा पण्डित चन्द्रमिश्र से
+प्राप्त की थी। प्रारम्भिक शिक्षा के पश्चात् सन् 1861 से 1866 ई० के मध्य उन्होंने गणित, फलित व गणित
+ज्योतिष की सैद्धान्तिक शिक्षा वाराणसी (काशी) में ग्रहण की । तदुपरान्त काशी से वापिस लाहौर लौटकर
+अपने पिता जी के सान्निध्य में ज्योतिष का कार्य व्यवसायिक तौर पर किया तथा ज्योतिष सम्बन्धी ज्ञान, अनुभव
+एवं योग्यता समुचित रूप से प्राप्त की। फिर सन् 1875 ई० अर्थात् वि. संवत् १९३२ में श्रीपंचाँग दिवाकर नाम
+से पंचाँग पत्रिका के लेखन एवं प्रकाशन का श्रीगणेश किया।
+    </p>
+    <h2>उपलब्धियां (Achievements)</h2>
+    <p>
+        पंचांग में प्रतिपादित तिथि, नक्षत्र, ग्रहादि की प्रामाणिक गणित, मुहूर्त्त, ग्रहणादि ज्योतिष विषयों एवं सटीक
+भविष्यवाणियों के कारण 'पंचाँग दिवाकर' पूर्वी एवं पश्चिमी पंजाब, हिमाचल प्रदेश, दिल्ली एवं जम्मूकश्मीर आदि राज्यों में विशेष रूप से लोकप्रिय होने लगी थीं । पण्डित देवी दयालु जी द्वारा संचालित पंचाँग
+दिवाकर व मुफीद आलम जन्त्री उर्दू में विषय सामग्री एवं पण्डित जी की विद्वता से प्रभावित होकर तत्कालीन
+काश्मीर के राजाधिराजा श्री हरिसिंह जी द्वारा उन्हें सन् 1916 ई० में सुनहरी गलीचे, वस्त्र, गड्ग एवं सुवर्ण
+मोहरें प्रदान करके अपने राजदरबार में सम्मानित किया गया । तदुपरान्त पण्डित देवी दयालु जी की
+ख्याति, उत्कृष्ट पंचाँग व सटीक भविष्यवाणियों के कारण देश के विभिन्न प्रान्तों में व्याप्त होने लगी
+थी। पण्डित जी के दोनों सुयोग्य लड़के पण्डित मोहन लाल व पण्डित शिवराम दत्त भी पंचाँग दिवाकर, मुफीद
+आलम जन्त्री उर्दू व तिथ-पत्रिका गुरुमुखी के सम्पादन व प्रकाशन के कार्य में पूरी योग्यता से सहयोग करने लगे
+थे।
+सन् 1921 ई० में पण्डित जी के स्वर्गारोहण के पश्चात् उनके दोनों लड़कों (पं. मोहन लाल जी ( हमारे
+पितामह) व पं. शिवराम जी) ने भी पंचाँग व जन्त्री में सूक्ष्म ग्रहगणित एवं प्रसिद्ध भविष्यवाणियों के कारण
+विशेष ख्याति प्राप्त की। लार्ड किचनर के सम्बन्ध में तथा ब्रिटिश प्रशासन काल में सरकार के विरूद्ध की गई
+कुछ सटीक भविष्यवाणियों के कारण सन् 1935-36 ई० में तत्कालीन ब्रिटिश सरकार द्वारा हमारी जन्त्री /
+पंचाँग के विरूद्ध द्वेषपूर्वक भावना से निषेधाज्ञा भी जारी की थी । जोकि तत्कालीन गणमान्य लोगों के
+अनुरोध स्वरूप वापिस ले ली गई । परिणामस्वरूप हमारी पंचाँग दिवाकर व मुफीद आलम जन्त्री उर्दू, पंजाबी, हिन्दी पाठकों के मध्य और भी अधिक लोकप्रिय होने लगी। राष्ट्रीयता की भावना से युक्त अनेकों प्रशस्ति
+पत्र भी हमें प्राप्त हुए जोकि तत्कालीन जन्त्री / पंचाँगों में उल्लिखित हैं। हमारे पितामहों ने ज्योतिष सम्बन्धी
+अनेकों पुस्तकों का भी लेखन व मुद्रण किया था। जिसमें ज्योतिष रत्नाकर, तनुभाव, धनभाव, सहजभाव,
+सुतभाव, स्त्री भाव, कर्मभाव, वर्षफल चन्द्रिका, विवाह पद्धति (हिन्दी), आयना किस्मत उर्दू - चारों भाग,
+आयना फलक, योगासन व प्राणायाम, इल्म उन्सफ, लग्न - आफताब, इल्म ख्वाब आदि विशेष रूप से
+उल्लेखनीय हैं। हमारे पितामह के स्वर्गारोहण के पश्चात् सन् 1943 के पश्चात् हमारे पूज्य पिता पण्डित चून्नी
+लाल व चाचा पण्डित रामसरणदास व पण्डित चिमन लाल जी द्वारा भी पंचाँग दिवाकर व जन्त्री उर्दू व तिथपत्रिका पंजाबी के संपादन व संचालन में महत्त्वपूर्ण योगदान दिया। सन् 1947 ई० को भारत विभाजन के पश्चात्
+हमारे पिता पंडित चून्नी लाल जी परिवार के जालन्धर (पंजाब) में आकर पंचाँगदिवाकर, मुफीद आलम
+जन्त्री व पंजाबी तिथ - पत्रिका लेखन व प्रकाशन कार्य सफलतापूर्वक करते रहे। उन्होंने भी धर्म एवं ज्योतिष
+सम्बन्धी पुस्तकों का योगदान किया है। जिनमें लक्ष्मी शक्ति, मनुष्य जीवन का रहस्य, सरिश्ता तकदीर (दो भाग),
+प्रश्न आफताब, गायत्री शक्ति, मन्त्र - शक्ति, इल्म केरल, श्रीदुर्गासप्तशती विशेष रूप से उल्लेखनीय हैं।
+सन् 1970 ई० में पूज्य पिता एवं चाचा जी के आकस्मिक निधन के पश्चात् पंचाँग व मुफीद आलम,
+तिथिपत्रिका गुरूमुखी व ज्योतिष सम्बन्धी अन्य पुस्तकों के लेखन एवं छपवाने का कार्य मैं स्वयं तथा अपने
+दोनों सुयोग्य पुत्रों (चिं. विवेक शर्मा एवं चिं. पंकज शर्मा) के सहयोग से गत चवालीस (44) वर्षों से पंचाँग/
+जन्त्री, कालदर्शक पंचाँग, लघुपंचाँग दिवाकर तथा अन्य ज्योतिष एवं धर्म सम्बन्धी पुस्तकों का सफलतापूर्वक प्रकाशन करते आ रहे हैं, और आशा है, ईश्वर की कृपा से और सुयोग्य पाठकों की सद्भावनाओं एवं सहयोग
+से भविष्य में भी पंचाँग-जन्त्री एवं ज्योतिष सम्बन्धी उपयोगी पुस्तकों के लेखन व प्रकाशन कार्यों में समर्पित बने
+रहेंगे। पंचाँग प्रवर्त्तक मशहूर आलम पण्डित देवी दयालु जी से लेकर आजतक की दीर्घावधि (138 वर्ष) में
+हमारे पंचाँग दिवाकर, मुफीद आलम जन्त्री (उर्दू-हिन्दी), तिथि पत्रिका गुरूमुखी व अन्य प्रकाशनों
+(आयना किस्मत, सरिश्ता तकदीर, प्रश्न आफताब, शिव मन्त्रावली, ज्योतिष तत्त्व ( तीन भाग), सुतभाव
+प्रकाश आदि) को जो विश्वव्यापी ख्याति प्राप्त हुई है । वह हमारे सुविज्ञ पाठकों से छिपी नहीं है।
+
+    </p>
+    <h5>निवेदक - पण्डित पन्ना लाल ज्योतिषी, पंचाँगकर्ता</h5>
+</body>
+</html>

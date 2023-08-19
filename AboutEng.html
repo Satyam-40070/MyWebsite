@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+        color: aliceblue;
+    }
+    li>a:hover{
+        text-decoration: underline;
+    }
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    .nav-item:hover{
+        text-decoration: underline;
+        color: #e9ecef;
+    }
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+  .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: #e9ecef;" class="nav-link active dropdown-toggle dropbtn" onclick="myFunction()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="cancer.html">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+            </li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(210, 53, 53);" class="nav-link active" href="">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+    <a href="AboutUs.html"><button class="btn btn-primary ml-auto" id="language">View in Hindi</button></a>
+    <h2 style="margin-left: 10px; margin-top: 50px;">Introduction</h2>
+    <p>
+        Panchang system is a systematic and developed form of ancient Indian time calculation and 
+        astrology. In fact, the current Panchang serves to integrate (combine) the various parts of 
+        Indian astrology (Tithi, Vaar, Nakshatra, Yoga, planetary communication, solar eclipse details 
+        etc.) in one place. In the Vedic and Puranic times before BC itself, there is a law to make 
+        auspicious resolution before starting every auspicious work like marriage, worship-recitation 
+        and yajna-rituals. In the resolution of auspicious works, the pronunciation of Samvat name, 
+        Ayan, Ritu month, Paksha-Tithi, War, Rashi, Nakshatra etc. is considered necessary. The 
+        details of all these elements are definitely found in the Panchang. There is a special 
+        description of the subtle system of time calculation in Indian astrology-calculation. In 
+        which the description of numbers from zero to crores, billions and trillions is found. Indian almanacs have played an important role in showing the time system. Descriptions of Uttarayan, Dakshinayan, Hemisphere, Vasantagrimadi Shadritu, Samvat month, Chandrakrishna Paksha, Purnima, Amavas, Ekadashi etc. dates, Vaar, Nakshatra, Yoga, planetary communication, solar lunar eclipse, auspicious marriage auspicious times, festivals etc. are described in Panchang. Glorious Vedic culture expresses important aspects of civilization. Panchang is not just a calendar showing dates, but it clearly reflects the form of ancient Indian civilization and culture in all our festivals etc. Almost all Indian festivals are based on Tithi, Vaar, Nakshatradi, whose scientific and mathematical description must be present in a one-level almanac.</p>
+<h2>History</h2>
+<p>
+    In the year 1875 AD, when our great-grandfather respected Pandit Devi Dayalu ji started the 
+    Panchang Diwakar (magazine) in Lahore (Pakistan), at that time the misrule of the British Empire 
+    was going on in India. For many years in the 17th century and before that, the people of India 
+    were in a state of fear, despair and struggle due to the atrocities of foreign robbers like Hunas, 
+    Jews, Yavanas, Mughals etc. In the 18th century, most of the people were upset and sad due to the 
+    exploitation of the British Empire. The social and political environment was turbulent and 
+    conflictual. Due to dependence, most of the people were turning away from the feelings of theism. Although voices of freedom and revolution started emerging from many parts of India. In such troubled environment, the shelter of religion and God was necessary. Great saints and savior saints like Shri Guru Nanakdev ji, Saint Ravidas ji, Swami Vivekananda were born in that period to re-communicate faith in religion and religious activities. In such difficult circumstances, inspired by the spirit of welfare of the people, Pandit Devi Dayalu ji made a good resolution to publish a serial series every year named Panchang Diwakar.</p>
+<h2>"The Symbol of Ancient Traditions - Panchang Diwakar"</h2><img src="assets/images/panch.png" id="panch"><br>
+<h4>(historical perspective )</h4>
+<p>
+    There was a great need for religious magazines like Panchang to spread awareness and enthusiasm 
+    among the common people about the festivals symbolizing Indian traditions and rituals. The 
+    details of birth festivals of almost all the divine Goddesses, Goddesses, Mahavidya, incarnations 
+    of Shri Ram, Krishna, Buddha etc. and incarnation days and regional fairs of Gurus like 
+    Shri Guru Nanakdev, Guru Shankaracharya, Guru Arjun Dev etc. remain in Panchang. In 
+    Panchang Diwakar, Sankranti, Purnima, Ashtami, Ekadashi, Trayodashi, Amavas etc. dates, 
+    Samvatsar-fruits, Paksha, description of different seasons, details of auspicious time like birthday, mundan, house construction, house warming, business, marriage, death rituals etc. Is.
+    Apart from this, on the basis of the planets, the religious, personal, economic, professional, domestic problems and solutions and political activities of the person are described in Diwakar Panchang. In this way, Panchang does the work of connecting people with their ancient traditions, festivals and culture. Sankalp has special importance in all the rites of Indian Hindu society like marriage, punsavan, mundan, marriage, funeral etc. In the Sankalp, the details of Samvat, Month, Paksha, Tithi, War, name of parents, gotra etc. are definitely there. For which the current authentic almanac is required. The arrival of Panchang Diwakar has proved to be a beacon of light for the pious people. The originator of 'Panchang Diwakar', our paternal grandfather Pujya Devi Dayalu Jyotishi ji was born in Lahore, the capital of undivided India (Punjab), on April 21, 1839, in a devout Shandilya Gotriya Brahmin family. He got his initial education of astrology from his father Shri Ramji Dutt and his grandfather Pandit Chandramishra. After primary education, between 1861 and 1866, he took the theoretical education of mathematics, results and mathematical astrology in Varanasi (Kashi). After that, after returning to Lahore from Kashi, he did the work of astrology professionally in the company of his father and got proper knowledge, experience and qualification related to astrology. Then in the year 1875 AD i.e. V. In Samvat 1932, he started the writing and publication of Panchang Patrika named Shri Panchang Diwakar.
+    </p>
+    <h2>Achievements</h2>
+    <p>
+        Panchang Diwakar had become particularly popular in eastern and western states like Punjab, 
+        Himachal Pradesh, Delhi and Jammu and Kashmir etc. due to accurate predictions of Tithi, 
+        Nakshatra, Grahaadi, Muhurta, Grahanadi astrological subjects and accurate predictions. 
+        Panchang Diwakar and Mufid Alam Jantri conducted by Pandit Devi Dayalu ji Impressed by the 
+        subject matter in Urdu and Pandit ji's scholarship, the then King of Kashmir Shri Hari Singh 
+        ji gave him golden rugs, clothes, gadg and gold stamps in his court in 1916. Awarded in 
+        Thereafter, the fame of Pandit Devi Dayalu ji started spreading in different provinces of 
+        the country due to her excellent almanac and accurate predictions. Pandit Mohan Lal and 
+        Pandit Shivram Dutt, both the capable sons of Pandit ji, also started cooperating with full competence in the work of editing and publication of Panchang Diwakar, Mufid Alam Jantri Urdu and date-magazine Gurmukhi. After Pandit ji's ascension in 1921 AD, both his sons (Pt. Mohan Lal ji (our grandfather) and Pt. Shivram ji) also gained special fame due to subtle calculations and famous predictions in Panchang and Jantri. In relation to Lord Kitchener and due to some accurate predictions made against the government during the British administration, in 1935-36 AD, the then British Government issued a prohibition against our Jantri/Panchang with malicious intent. Which was withdrawn as per the request of the then dignitaries. As a result, our Panchang Diwakar and Mufid Alam Jantri became more and more popular among Urdu, Punjabi and Hindi readers. We also received many citations containing the spirit of nationalism, which are mentioned in the then Jantri/Panchang. Our forefathers had also written and printed many books related to astrology. In which Astrology Ratnakar, Tanubhav, Dhanbhav, Sahajbhav, Sutbhav, Feminine Bhav, Karmbhav, Varshphal Chandrika, Marriage Method (Hindi), Aayana Kismat Urdu - All Four Parts, Aayana Falak, Yogasan and Pranayama, Ilm Unsaf, Lagna - Aftab, Ilm Khwab etc. are particularly noteworthy. After the ascension of our grandfather, after the year 1943, our respected father Pandit Chunni Lal and uncle Pandit Ramsarandas and Pandit Chiman Lal ji also contributed significantly in editing and running Panchang Diwakar and Jantri Urdu and Tithpatrika Punjabi. After the partition of India in 1947, our father Pandit Chunni Lal ji's family came to Jalandhar (Punjab) and continued to write and publish Panchang Diwakar, Mufid Alam Jantri and Punjabi date-magazines successfully. He has also contributed books related to religion and astrology. In which Lakshmi Shakti, The Secret of Human Life, Sarishta Takdeer (two parts), Prashna Aftab, Gayatri Shakti, Mantra-Shakti, Ilm Kerala, Sridurga Saptashati are particularly noteworthy. After the sudden demise of respected father and uncle in 1970, the work of writing and printing Panchang and Mufid Alam, Tithipatrika Gurmukhi and other books related to astrology, myself and my two capable sons (Ch. Vivek Sharma and Ch. Pankaj Sharma) For the last forty-four (44) years, Panchang/Jantri, Kaldarshak Panchang, Laghupanchang Diwakar and other books related to astrology and religion have been successfully published, and it is hoped that by the grace of God and with the goodwill and cooperation of the worthy readers Will remain dedicated in writing and publishing useful books related to Panchang-Jantri and Astrology in future also. From Panchang promoter famous Alam Pandit Devi Dayalu ji till date, our Panchang Diwakar, Mufid Alam Jantri (Urdu-Hindi), Tithi Patrika Gurmukhi and other publications (Aaina Kismat, Sarishta Takdeer, Prashna Aftab, Shiv Mantravali, Jyotish Tattva (three parts), Sutabhav Prakash etc.) which has gained worldwide fame. It is not hidden from our knowledgeable readers.
+
+    </p>
+    <h5> - Pandit Panna Lal Astrologer, Almanac</h5>
+</body>
+</html>

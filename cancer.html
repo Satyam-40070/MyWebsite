@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    display: inline-flex;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sign{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+        color: black;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: right;
+    }
+    h1{
+        margin-top: 80px;
+        text-align: right;
+        margin-right: 0px;
+    }
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    b{
+        margin-left: 40px;
+    }
+    #ari{
+        height: 115px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+    .line{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: rgb(210, 53, 53);" class="nav-link active dropdown-toggle dropbtn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="#">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+                  
+            </li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="AboutUs.html">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+<br><br>
+    <div id="taurus" class="sign">
+        <div class="line">
+            <img src="assets/images/cancer.png" alt="aries" id="ari">
+        <h1>कर्क राशि (CANCER)</h1>
+        </div>
+        <h4>सामान्य विशेषताएं, स्वभाव व परिचय</h4><hr style="border: 1px solid black;"><br>
+        <p>
+<b>कर्क राशि</b> का स्वामी चन्द्रमा है । जल तत्त्व प्रधान एवं चर राशि होने से
+जातक सुन्दर एवं आकर्षक मुखाकृति, गोल चेहरा और मध्यम कद वाला
+होगा । चन्द्र-मंगल शुभ हों तो जातक बुद्धिमान, संवेदनशील, भावुक हृदय,
+न्यायप्रिय व दयालु स्वभाव वाला होगा । सामान्यतः परिवर्तनशील स्वभाव,
+चंचल, जलीय वस्तुओं का प्रिय, उच्च कल्पनाशील, समयानुकूल काम निकालने
+में कुशल, मिलनसार प्रकृति होगी। यदि चन्द्रमा अशुभ हो तो चिड़चिड़ा
+स्वभाव, वातावरण से शीघ्र प्रभावित होने वाला होगा । प्राकृतिक सौंदर्य,
+कला-संगीत व साहित्य में विशेष रुचि रखे तथा सौन्दर्यानुभूति भी विशेष रूप
+से रहे। ऐसा जातक परिस्थितिनुसार ढल जाने वाला, प्यार सम्बन्धों में सच्चा,
+ईमानदार और सहृदय, दयालु प्रकृति का होगा। ऐसा जातक जिस किसी काम
+को करना चाहे कर ही लेता है । आय साधन एक से अधिक होते हैं ।
+कल्पना (विचार) शक्ति प्रबल होती है, अन्य पुरुष के भावों को शीघ्र समझ
+लेने की विशेष क्षमता होती है । कर्क राशि वालों का मकर, वृश्चिक, मीन राशि
+वालों के साथ मित्रता शुभ रहती है।</p>
+<p>कर्क जातक अत्यन्त संवेदनशील होते हैं। दूसरों की कही जरा सी बात की
+    उन पर इतनी प्रतिक्रिया होती है कि वे घण्टों उसी के बारे में सोचते रहते हैं ।
+    इनकी स्मरण शक्ति भी बहुत तेज होती है । कर्क जातकों को अपने परिवार में
+    विशेषकर पत्नी तथा पुत्र के प्रति विशेष मोह होता है । वे मैत्री को भी जीवनभर
+    निभाना जानते हैं। कर्क राशि के लोग व्यक्ति, वस्तु तथा परिस्थितियों में जकड़
+    जाया करते हैं ।</p>
+<p>
+<b>उपाय-</b>सोमवार का व्रत रखना तथा चाँदी की अंगूठी धारण करना इनके
+लिए शुभ रहेगा ।<br>
+<b>शुभ नग–</b>इस राशि वालों को 'मोती' अनामिका या कनिष्ठका अँगुली में
+चाँदी की अंगूठी में पूर्णिमा के दिन गंगाजल, कच्चा दूध व ताण्डुलादि में Dip
+करके मन्त्र पढ़कर विधिपूर्वक धारण करें। <strong>( ॐ श्रां श्रीं श्रौं सः चन्द्रमसे नमः )</strong> <br>
+<b>शुभ दिन -</b> सोमवार का दिन शुभ है।<br>
+<b>शुभ रंग -</b> सफेद रंग इन्हें अपने कपड़ों में अवश्य धारण करना चाहिए ।
+        </p>
+    </div>
+    
+</body>
+</html>

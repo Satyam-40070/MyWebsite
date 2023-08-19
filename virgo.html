@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    display: inline-flex;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sign{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+        color: black;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: right;
+    }
+    h1{
+        margin-top: 80px;
+        text-align: right;
+        margin-right: 0px;
+    }
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    b{
+        margin-left: 40px;
+    }
+    #ari{
+        height: 115px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+    .line{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: rgb(210, 53, 53);" class="nav-link active dropdown-toggle dropbtn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="cancer.html">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="#">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+                  
+            </li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="#">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+<br><br>
+    <div id="taurus" class="sign">
+        <div class="line">
+            <img src="assets/images/virgo.png" alt="aries" id="ari">
+        <h1>कन्या राशि (VIRGO)</h1>
+        </div>
+        <h4>सामान्य विशेषताएं, स्वभाव व परिचय</h4><hr style="border: 1px solid black;"><br>
+        <p>
+<b>कन्या राशि </b> वाले जातक का मध्यम कद, कोमल शरीर, सुन्दर व
+आकर्षक आँखें, लम्बी नाक, वाणी तेज़ व कुछ बारीक होगी । जातक प्रियभाषी,
+हर कार्य में सहायक, लज्जाशील प्रकृति, नर्म स्वभाव और नीति के अनुकूल
+काम करने वाला होगा। कल्पनाशील, सूक्ष्मदर्शी एवं संवेदनशील (Sensi-
+tive) स्वभाव का होगा । शान्तचित एवं एकान्तप्रिय प्रवृत्ति होगी। परन्तु कठिन
+एवं विपरीत परिस्थितियों में भी स्वयं को ढालने का सामर्थ्य होगा। एक ही
+समय पर अनेक भाषाओं एवं विषयों में पारंगत होने की चेष्टा करेगा। संगीत,
+कला एवं साहित्य में विशेष दिलचस्पी रखेगा । द्विस्वभाव एवं परिवर्तनशील
+प्रकृति होने के कारण एक विषय पर चिरकाल तक स्थिर नहीं हो पाता । बुध-
+शुक्र का शुभ योग होने से लेखा- गणित (Accounts), संगीत, कला,
+अध्यापन, लेखन, क्रय-विक्रय, चित्रकारी, अभिनयकला में विशेष रूचि रहती
+है। बुद्धिमान, तीव्र स्मरणशक्ति एवं अध्ययनशील प्रकृत्ति होगी। भाग्योन्नतिकारक
+वर्ष 25, 32 तथा 35, 36 और 42वें वर्ष होते हैं । कन्या जातक जन्मजात
+आलोचक होते हैं । अत: बहुत सोच समझकर अपने मित्रों का चुनाव करते हैं।
+उनका विश्लेषण स्पष्ट और निर्णय तथा राय वास्तविकता पर आधारित होता
+है। उनमें नए-नए विषयों का ज्ञान प्राप्त करने की प्रवृत्ति होती है। इस राशि के
+जातक में आश्चर्यजनक स्मरणशक्ति और प्रखर बुद्धि होती है। जो लक्ष्य
+निर्धारित कर लेते हैं, उसे हर हालत में पूरा करके ही सन्तुष्ट होते हैं। कर्मठ
+होने के कारण वे बड़ी आयु तक भी युवा दिखाई देते हैं । इनके स्वभाव में एक
+विशेष बात पाई जाती है कि वे अपने निवास स्थान अथवा कार्य-व्यवसाय में
+लगातार परिवर्तन करते रहते हैं ।</p>
+<p>सिंह जातक हर काम को बड़े आत्मविश्वास के साथ बड़े पैमाने पर करना पसन्द
+    करते हैं। वे स्पष्टवादी, खुले दिल वाले और महत्त्वकांक्षी होते हैं। सिंह जातकों को
+    सबसे अधिक भय अपने मित्रों से रहता है। लोग उनकी उदारता तथा अन्य गुणों का
+    अनुचित लाभ उठाने का प्रयास करते हैं। ये जातक जन्म से ही आशावादी होते हैं और
+    आसानी से निराशा के शिकार नहीं होते। सिंह जातक किसी अन्य राशि के जातकों की
+    अपेक्षा अधिक प्रदर्शन में विश्वास करते हैं । ये लोग आर्थिक मामलों में प्रायः
+    भाग्यशाली होते हैं। ईमानदारी के किसी भी काम में उन्हें अच्छी सफलता मिल सकती
+    है। उन्हें अपने खर्चीले स्वभाव पर अंकुश रखना चाहिए।</p>
+<p>
+<b>उपाय-</b>बुधवार का व्रत सदैव लाभकारी है तथा हरा चारा गऊशाला में दान
+करें ।<br>
+<b>शुभ नग–</b>कन्या राशि वालों को पन्ना रत्न, सोने की अंगूठी दाएँ हाथ की
+कनिष्ठका अँगुली में बुधवार को बुध के बीजमन्त्र से अभिमन्त्रित करते हुए
+धारण करना चाहिए। बुध बीज मन्त्र -<strong> “ ॐ ब्रां ब्रीं ब्रौं सः बुधाय नमः"</strong> <br>
+<b>शुभ वार -</b>  बुधवार, शनिवार, रविवार एवं शुक्रवार अति शुभ रहेंगे ।<br>
+<b>शुभ रंग -</b>  हरा, नीला, श्वेत रंग एवं संगतरी रंग अति शुभ।
+        </p>
+    </div>
+    
+</body>
+</html>

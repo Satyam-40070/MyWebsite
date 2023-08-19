@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 0;
+    display: inline-flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sign{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+        color: black;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: right;
+    }
+    h1{
+        margin-top: 80px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    b{
+        margin-left: 40px;
+    }
+    #ari{
+        height: 115px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .line{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: rgb(210, 53, 53);" class="nav-link active dropdown-toggle dropbtn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="#">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+                  
+            </li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="#">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="AboutUs.html">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+<br>
+    <div id="aries" class="sign">
+        <div class="line">
+        <img src="assets/images/aries-removebg-preview.png" alt="aries" id="ari">
+        <h1> मेष राशि (ARIES)</h1>
+    </div>
+        <h4>सामान्य विशेषताएं, स्वभाव व परिचय</h4><hr style="border: 1px solid black;"><br>
+        <p>
+
+<b>मेष राशि</b> में उत्पन्न जातक/जातिका मध्यम कद वाला, उत्साहयुक्त एवं साहसी
+प्रकृति का होगा। इस राशि का स्वामी मंगल होने जातक के मुख का रंग लाल
+(ताम्रवर्ण) अथवा गेहूआं वर्ण होगा। यदि भरणी नक्षत्र होगा तो रंग गोरा एवं लालिमा
+युक्त होगा। बदन गठीला एवं बाल घुंघराले होंगे । इस राशि की महिलाओं के बाल
+प्राय: लम्बे और घने होते हैं ।
+</p>
+<p>
+<b>मेष राशि</b> के जातक परोपकारी, उग्र स्वभावी, तेजस्वी, सुशील, सभी के चित्त को
+प्रसन्न करने वाला, साहसी, उद्यमी एवं परिश्रमी होगा | सतर्क बुद्धि और स्वतन्त्र
+विचार रखेगा। स्मरणशक्ति तेज होगी । अग्नि तत्त्व प्रधान होने के कारण जातक/
+जातिका भावुक प्रकृति वाला, परिवर्तनशील तथा अस्थिर स्वभाव वाला होगा। क्षणिक
+क्रोधित हो जाने पर शीघ्र ही मान जावे । भ्रमणप्रिय प्रकृति अर्थात् घूमने-फिरने का
+विशेष शौक रखे। जीवन में अपने परिश्रम एवं उद्यम के बल पर आय एवं धन प्राप्ति
+के साधन जुटा लेते हैं। बहन-भाई होने पर भी उनका सहयोग नहीं मिल पाता। मंगल
+शुभ हो तो जातक बड़े से बड़े शत्रु से टकराने से नहीं डरता तथा अपने निश्चय पर
+अडिग रहता है। नई-नई योजनाएं बनाने में कुशल होगा | मेष राशि के जातकों के
+स्वभाव में प्राय: जल्दबाजी रहती है। इनके मस्तिष्क में नई-नई मौलिक योजनाएं
+चलती रहती हैं। अत्यन्त महत्त्वाकांक्षी होने के साथ-साथ वे खुले दिल के और
+स्पष्टवादी भी होते हैं ।
+</p>
+<p>
+दृढ़ इच्छाशक्ति और संकल्पशक्ति होने के कारण मेष राशि के जातकों में
+बड़े-बड़े व्यवसायिक या सार्वजनिक संगठनों के संचालन की विशेष योग्यता पाई
+जाती है। मेष राशि के जातकों में यह प्रबल इच्छा रहती है कि घर, व्यापार में,
+कार्यक्षेत्र में, सभी जगह उन्हें मुखिया समझा जाए ।</p><p>
+<b>उपाय-</b> मेष राशि वालों को क्रोध से बचना चाहिए। आपका परिश्रम ही
+आपको जीवन में उन्नति एवं प्रगति के मार्ग पर ले जाएगा। मंगलवार का व्रत
+रखना तथा श्रीमद्भगवद् गीता का पाठ करना शुभ होगा।</p><p>
+<b>शुभ नग-</b>सवा आठ रत्ती का मूंगा सोने या तांबे की अंगूठी में जुड़वाकर बीज
+मन्त्र द्वारा अभिमंत्रित करके अनामिका अंगुली में धारण करना शुभ होता है।</p><p>
+मंगल का बीज मन्त्र - ॐ क्रां क्रीं क्रौं सः भौमाय नमः ।<br>
+शुभ वार- मंगलवार, गुरुवार एवं रविवार |<br>
+शुभ अंक - 9, 1, 2, 3 शुभ हैं।<br>
+शुभ रंग - लाल, पीला, संतरी, हल्का नीला ।<br>
+        </p>
+    </div>
+</body>
+</html>

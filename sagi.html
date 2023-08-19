@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        li>a{
+        font-size: x-large;
+                
+    }
+    ul>li>a:hover{
+        text-decoration: underline;
+    }
+    
+    body{
+            padding-top: 85px;
+            background-color: antiquewhite;
+        }
+    p{
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    #panch{
+        height: 95px;
+        width: 150px;
+        margin-left: 680px;
+        margin-right: auto;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    #language{
+        float: right;
+        margin-right: 10px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    display: inline-flex;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sign{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    height: auto;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    nav{
+        background-image: linear-gradient(45deg,black,orange);
+        color: black;
+    }
+    h5{
+        text-align: right;
+    }
+    h2{
+        text-align: right;
+    }
+    h1{
+        margin-top: 80px;
+        text-align: right;
+        margin-right: 0px;
+    }
+    h4{
+        text-align: right;
+        margin-right: 10px;
+    }
+    b{
+        margin-left: 40px;
+    }
+    #ari{
+        height: 115px;
+        width: 115px;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .line{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item"><a class="nav-link active" href="#"><img src="assets/images/logo1.png" id="logo"></a></li>-->
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: rgb(210, 53, 53);" class="nav-link active dropdown-toggle dropbtn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="#">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+                  
+            </li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="almanac.html">Almanac</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="#">Catalogue</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: rgb(244, 236, 236);" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+<br><br>
+    <div id="taurus" class="sign">
+        <div class="line">
+            <img src="assets/images/sagi.png" alt="aries" id="ari">
+        <h1>धनु राशि (SAGGITARIUS)</h1>
+        </div>
+        <h4>सामान्य विशेषताएं, स्वभाव व परिचय</h4><hr style="border: 1px solid black;"><br>
+        <p>
+<b>धनु राशि </b> का स्वामी गुरु है । इस राशि में उत्पन्न जातक का ऊंचा
+मस्तक, कान बड़े, लग्न भाव क्रूर ग्रह होने की स्थिति में सिर मध्य
+अल्पबाल अथवा गंजा हो सकता है। गुरु - बुध की स्थिति शुभ हो तो सौम्य
+एवं शान्त, सरल स्वभाव, धार्मिक प्रकृति, उदार हृदय, परोपकारी, संवेदनशील,
+करुणा, दया आदि भावनाओं से युक्त होगा। दूसरों के मनोभावों को जान लेने
+की विशेष क्षमता होगी। इस राशि से प्रभावित व्यक्ति में बौद्धिक एवं मानसिक
+शक्ति प्रबल होती है। साथ-साथ अश्व जैसी तीव्रता, उत्साह एवं उत्तेजना से
+कार्य करने की क्षमता होगी। द्विस्वभाव राशि के कारण शीघ्र कोई निर्णय नहीं ले
+पाए और इनको क्रोध जल्दी नहीं आता, परन्तु जब आता है तो देर तक क्रोधित
+रहते हैं। अग्नि तत्त्व प्रधान होने के कारण इस राशि के स्त्री-पुरुष कठिन से
+कठिन समस्याओं को अपने साहस एवं परिश्रम द्वारा सुलझा लेंगे तथा निजी
+सवारी आदि सुखों की प्राप्ति होगी । शिक्षक, धर्म-प्रचारक, राजनीतिक, वैद्य,
+डॉक्टर, वकील, पुस्तक व्यवसाय आदि के क्षेत्र में सफलता प्राप्त होगी।
+धनु जातकों के स्वभाव में आगे बढ़ने की बलवली भावना रहती है। धनु
+जातकों में तीव्र बुद्धि होती है । इनका व्यक्तित्व प्राय: रंगीन और उत्साही होता
+है। धनु जातक मूलरूप से जीवन के प्रति आशावादी दृष्टिकोण रखते हैं। इनकी
+उदारता का लोग प्राय: अनुचित लाभ उठाने का भी प्रयास करते हैं।
+विशेष उपाय-बृहस्पतिवार को व्रत रखना तथा सूर्य भगवान् एवं अपने
+इष्ट देव की उपासना शुभ एवं कल्याणप्रद रहेगी।</p>
+<b>शुभ नग–</b>इस राशि वालों को पुखराज रत्न 5, 7, 9 या 12 रत्ति के वज़न
+का सोने की अंगूठी में जड़वाकर तर्जनी अंगुली में धारण करें। स्वर्ण या ताम्र
+बर्तन में कच्चा दूध, गंगा जल, पीले पुष्पों एवं <strong> “ॐ ऐं क्लीं बृहस्पताये
+    नमः"</strong>के बीज मन्त्र द्वारा अभिमंत्रित करके धारण करना चाहिए। (जप
+    संख्या - 16 हज़ार) <br>
+<b>शुभ वार -</b> रविवार, मंगलवार, बृहस्पतिवार शुभ दिन है।<br>
+<b>शुभ रंग -</b>  पीला, जामुनी, सफेद ।
+        </p>
+    </div>
+    
+</body>
+</html>

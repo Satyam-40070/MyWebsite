@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-top: 70px;
+            background-color: antiquewhite;
+        }
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            /*justify-content: center;*/
+        }
+        .row{
+            justify-content: space-evenly;
+            margin-top: 40px;
+            padding-left: 20px;
+        }
+        .card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            margin: 0px;
+            max-width: 290px;
+            min-height: 396px;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+            box-shadow: 0px 2px 3px rgba(117, 181, 231, 0.24);
+        }
+        .card-body{
+            flex: 1 1 auto;
+            padding: 1rem 1rem;
+        }
+        .card-title{
+            margin-bottom: 0.5rem;
+        }
+        .card-text{
+            text-align: justify;
+        }
+        .card-img-top:hover{
+            transform: scale(1.1);
+        }
+        li>a{
+        font-size: x-large;
+        color: aliceblue;
+    }
+    .nav-item:hover{
+        text-decoration: underline;
+    }
+   /* body{
+        background-image: linear-gradient(45deg,rgb(163, 66, 66),chocolate);
+    }*/
+    #panch{
+        height: 160px;
+        width: 100%;
+    }
+    #vert_img{
+        height: 275px;
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    form{
+        display: inline-flex;
+    }
+    button{
+        padding-left: 15px;
+    }
+    .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+  nav{
+        /*background-color: rgb(204, 166, 95);*/
+        background-image: linear-gradient(45deg,black,orange);
+        color: #e9ecef;
+    }
+    .navbar-brand img {
+        height: 50px; 
+        width: 50px;
+}
+    li{
+      text-transform: capitalize;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 0px;
+    }
+    .info{
+      /*background-color: black;*/
+      margin: 0px;
+      padding: 0px;
+      background-image: linear-gradient(45deg,rgb(105, 72, 10),orange);
+      width: 100%;
+      min-height: 200px;
+    }
+    .dropdown-content{
+        position: absolute;
+        display: none;
+    }
+    .dropdown-content span a {
+        display: block;
+    }
+    .show {
+  display: block;
+}
+    footer{
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 665px;
+    }
+    @media only screen and (max-width: 768px){
+        .card{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+       
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo1.png" id="logo" alt="logo">
+              </a>
+            <div class="navbar-nav">
+    
+            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a style="color: #e9ecef;" class="nav-link active dropdown-toggle dropbtn" onclick="myFunction()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Horoscope</a>
+                <div class="dropdown-menu dropdown-content" id="myDropdown" style="background-color: rgb(223, 171, 87);" aria-labelledby="navbarDropdown">
+                    <span>
+                    <a class="dropdown-item" href="horoscope.html">ARIES</a>
+                    <a class="dropdown-item" href="taurus.html">TAURUS</a>
+                    <a class="dropdown-item" href="gemini.html">GEMINI</a>
+                    <a class="dropdown-item" href="cancer.html">CANCER</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="leo.html">LEO</a>
+                    <a class="dropdown-item" href="virgo.html">VIRGO</a>
+                    <a class="dropdown-item" href="libra.html">LIBRA</a>
+                    <a class="dropdown-item" href="scorpio.html">SCORPIO</a>
+                </span>
+                <span>
+                    <a class="dropdown-item" href="sagi.html">SAGGITARIUS</a>
+                    <a class="dropdown-item" href="capricorn.html">CAPRICORN</a>
+                    <a class="dropdown-item" href="aquarius.html">AQUARIUS</a>
+                    <a class="dropdown-item" href="pisces.html">PISCES</a>
+                </span>
+                  </div>
+            </li>
+            <li class="nav-item"><a style="color: rgb(210, 53, 53);" class="nav-link active" href="#">Almanac</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="AboutUs.html">About Us</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" onkeyup="searchbook()" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><img src="assets/images/search.png"></button>
+          </form>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signupForm.php"><img src="assets/images/signup.png">SignUp</a></li>
+            <li class="nav-item"><a style="color: #e9ecef;" class="nav-link active" href="signinForm.php"><img src="assets/images/signin.png">SignIn</a></li>   
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+        function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+    <div class="note" style="background-color: rgb(44, 42, 42);color: #fff;min-height: 40px;padding-top: 10px;">
+        <p>*NOTE: To order these books kindly message on any of the whatsApp numbers given at the bottom of the page</p>
+    </div>
+    <div class="container">
+    <div class="row" data-aos="fade-right" data-aos-duration="1000">
+    <div class="col-sm-3">
+    <div class="card">
+        <img src="assets/images/panch.png" alt="diwali" id="panch" class="card-img-top">
+        <div class="card-body">
+            <h4 class="card-title">Diwakar Panchang 2023-24</h4>
+            <p class="card-text">Price: &#8377; 130</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card">
+            <img src="assets/images/laghu_panch.jpeg" alt="diwali" id="panch" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Laghu Diwakar Panchang 2023-24</h4>
+                <p class="card-text">Price: &#8377; 50</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <img src="assets/catalog_images/Asli.jpeg" alt="diwali" id="panch" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Asli Tith Patrika</h4>
+                        <p class="card-text">Price: &#8377; 100</p>
+                    </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="row" data-aos="fade-left" data-aos-duration="1000">
+        <div class="col-sm-3">
+        <div class="card">
+            <img src="assets/images/mufid.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Mufid Alam Jantri Hindi 2023</h4>
+                <p class="card-text">Price: &#8377; 110</p>
+            </div>
+        </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="card" style="height: 431px;">
+                <img src="assets/images/mufid_pun.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Mufid Alam Jantri Punjabi 2023</h4>
+                    <p class="card-text">Price: &#8377; 115</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="assets/images/mufid_urdu.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Mufid Alam Jantri Urdu 2023</h4>
+                    <p class="card-text">Price: &#8377; 110</p>
+                </div>
+                </div>
+                </div>
+        </div>
+
+        <div class="row" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-sm-3">
+            <div class="card">
+                <img src="assets/images/jantri_rashi_pun.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Jantri Rashifal Punjabi 2024</h4>
+                    <p class="card-text">Price: &#8377; 80</p>
+                </div>
+            </div>
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="assets/images/jantri_rashifal.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Jantri Rashifal Hindi 2024</h4>
+                        <p class="card-text">Price: &#8377; 80</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/images/pun_cal.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">DD Kaldarshak Punjabi 2023</h4>
+                            <p class="card-text">Price: &#8377; 50</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 10px;" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-sm-3">
+                <div class="card">
+                    <img src="assets/images/hindi_cal.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Diwakar Calendar Hindi 2023</h4>
+                        <p class="card-text">Price: &#8377; 40</p>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="assets/images/DD_kal.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">DD Kaldarshak Hindi 2023</h4>
+                            <p class="card-text">Price: &#8377; 50</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img src="assets/images/sidh_lakshmi.jpeg" alt="diwali" id="vert_img" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">Sidh Lakshmi Kaldarshak 2023</h4>
+                                <p class="card-text">Price: &#8377; 40</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+    </div>
+    <div class="info">
+        <p style="margin-left: 15px; padding-top: 15px; color: rgb(233, 225, 225); font-size: large;">Contact Us</p>
+        <p style="margin-left: 15px; color: rgb(233, 225, 225);"><i class="bi-geo-alt-fill"></i> General Book Depot, Chowk Adda Hoshiarpur, Jalandhar city, Punjab - 144008</p>
+        <p style="margin-left: 15px; color: rgb(233, 225, 225);"><i class="bi-envelope-fill"></i>  pankajsharma33018@gmail.com, viveksharma1973@yahoo.com</p>
+        <p style="margin-left: 15px; color: rgb(233, 225, 225);"><i class="bi-telephone-fill"></i> +91-9417291325, +91-9779913583</p>
+      </div>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
